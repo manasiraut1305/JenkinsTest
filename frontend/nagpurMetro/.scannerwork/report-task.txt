@@ -1,0 +1,6 @@
+projectKey=TestNgpFront
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=TestNgpFront
+ceTaskId=473cbbc3-473e-4890-851a-49a0b5f013f6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=473cbbc3-473e-4890-851a-49a0b5f013f6

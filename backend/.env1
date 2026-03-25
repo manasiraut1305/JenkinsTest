@@ -1,0 +1,26 @@
+# Server Port
+PORT=5000
+
+# Frontend (React) URL
+CLIENT_URL="http://localhost:5173,http://192.168.2.5:905,http://59.97.236.98:905"
+
+# Backend Base URL
+# BASE_URL=http://192.168.2.5:5000 
+BASE_URL=http://59.97.236.98:5000
+# BASE_URL=http://59.97.236.98:5000
+# BASE_URL=http://localhost:5001
+
+
+# Database Config
+DB_USER=sa
+DB_PASSWORD=sql123#
+# DB_SERVER=localhost\sqlexpress
+DB_SERVER=HPSERVER
+
+
+DB_NAME=NagpurMetro_New
+
+# JWT_SECRET=supersecretkey
+
+
+

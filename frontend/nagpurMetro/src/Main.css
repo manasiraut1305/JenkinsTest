@@ -1,0 +1,328 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url("../public/style.css"); */
+
+
+/* Basic CSS */
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif !important;
+  color: #553535;
+  font-size: 1rem; /* = 16px */
+  line-height: 1.6;
+}
+
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background: #f5f6fa;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Medium.eot");
+  src: url("../fonts/Barlow-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-Medium.woff2") format("woff2"),
+    url("../fonts/Barlow-Medium.woff") format("woff"),
+    url("../fonts/Barlow-Medium.ttf") format("truetype"),
+    url("../fonts/Barlow-Medium.svg#Barlow-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Thin.eot");
+  src: url("../fonts/Barlow-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-Thin.woff2") format("woff2"),
+    url("../fonts/Barlow-Thin.woff") format("woff"),
+    url("../fonts/Barlow-Thin.ttf") format("truetype"),
+    url("../fonts/Barlow-Thin.svg#Barlow-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Black.eot");
+  src: url("../fonts/Barlow-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-Black.woff2") format("woff2"),
+    url("../fonts/Barlow-Black.woff") format("woff"),
+    url("../fonts/Barlow-Black.ttf") format("truetype"),
+    url("../fonts/Barlow-Black.svg#Barlow-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-ExtraBold.eot");
+  src: url("../fonts/Barlow-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Barlow-ExtraBold.woff") format("woff"),
+    url("../fonts/Barlow-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Barlow-ExtraBold.svg#Barlow-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Bold.eot");
+  src: url("../fonts/Barlow-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-Bold.woff2") format("woff2"),
+    url("../fonts/Barlow-Bold.woff") format("woff"),
+    url("../fonts/Barlow-Bold.ttf") format("truetype"),
+    url("../fonts/Barlow-Bold.svg#Barlow-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-SemiBold.eot");
+  src: url("../fonts/Barlow-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-SemiBold.woff2") format("woff2"),
+    url("../fonts/Barlow-SemiBold.woff") format("woff"),
+    url("../fonts/Barlow-SemiBold.ttf") format("truetype"),
+    url("../fonts/Barlow-SemiBold.svg#Barlow-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Light.eot");
+  src: url("../fonts/Barlow-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-Light.woff2") format("woff2"),
+    url("../fonts/Barlow-Light.woff") format("woff"),
+    url("../fonts/Barlow-Light.ttf") format("truetype"),
+    url("../fonts/Barlow-Light.svg#Barlow-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-ExtraLight.eot");
+  src: url("../fonts/Barlow-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Barlow-ExtraLight.woff") format("woff"),
+    url("../fonts/Barlow-ExtraLight.ttf") format("truetype"),
+    url("../fonts/Barlow-ExtraLight.svg#Barlow-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.eot");
+  src: url("../fonts/Barlow-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Barlow-Regular.woff2") format("woff2"),
+    url("../fonts/Barlow-Regular.woff") format("woff"),
+    url("../fonts/Barlow-Regular.ttf") format("truetype"),
+    url("../fonts/Barlow-Regular.svg#Barlow-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Noto Sans Marathi Font */
+
+/* html[lang="mr"] * {
+  font-family: "Noto Sans", sans-serif !important;
+} */
+
+html[lang="mr"] h2,
+html[lang="mr"] p,
+html[lang="mr"] span,
+html[lang="mr"] div {
+  font-family: "Noto Sans" !important;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Bold.eot");
+  src: url("../fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSans-Bold.woff") format("woff"),
+    url("../fonts/NotoSans-Bold.ttf") format("truetype"),
+    url("../fonts/NotoSans-Bold.svg#NotoSans-Bold") format("svg");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Regular.eot");
+  src: url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSans-Regular.woff") format("woff"),
+    url("../fonts/NotoSans-Regular.ttf") format("truetype"),
+    url("../fonts/NotoSans-Regular.svg#NotoSans-Regular") format("svg");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Medium.eot");
+  src: url("../fonts/NotoSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSans-Medium.woff") format("woff"),
+    url("../fonts/NotoSans-Medium.ttf") format("truetype"),
+    url("../fonts/NotoSans-Medium.svg#NotoSans-Medium") format("svg");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-SemiBold.eot");
+  src: url("../fonts/NotoSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/NotoSans-SemiBold.woff") format("woff"),
+    url("../fonts/NotoSans-SemiBold.ttf") format("truetype"),
+    url("../fonts/NotoSans-SemiBold.svg#NotoSans-SemiBold") format("svg");
+  font-weight: 600;
+}
+
+.shapbox .icon-kiosk:before,
+.shapbox .icon-outdoor_branding:before,
+.shapbox .icon-property_development:before,
+.shapbox .icon-train:before,
+.shapbox .icon-film_shooting:before,
+.shapbox .icon-commercial_space:before {
+  font-family: "icomoon" !important;
+}
+.notices-alerts .icon-bell-exclamation {
+  font-family: "icomoon" !important;
+}
+
+.shapiconbox .icon-kiosk:before,
+.shapiconbox .icon-outdoor_branding:before,
+.shapiconbox .icon-property_development:before,
+.shapiconbox .icon-train:before,
+.shapiconbox .icon-film_shooting:before,
+.shapiconbox .icon-commercial_space:before {
+  font-family: "icomoon" !important;
+}
+
+/* Common Class */
+dl,
+ol,
+ul {
+  margin-bottom: 0rem !important;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000; /* normal text black */
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff; /* make all non-card text white */
+}
+
+/* Ensure Bootstrap cards remain styled normally even in dark mode */
+body.dark .card {
+  background-color: #ffffff; /* keep cards light */
+  color: #000000; /* card text black */
+}
+
+body.dark .page-content p {
+  color: #ffffff !important;
+}
+
+/* Make icon labels white in dark mode */
+body.dark .wherecanifind .txtbld {
+  color: #ffffff !important;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+p {
+  font-size: 0.875rem;
+  margin-bottom: 0px !important;
+  text-align: justify !important;
+}
+.p-2rem {
+  padding: 2rem !important;
+}
+.m-2b {
+  margin-bottom: 2rem !important;
+}
+
+ul li:last-child {
+  padding: 0 !important;
+}
+ol li:last-child {
+  padding: 0 !important;
+}
+:root {
+  --white: #fff;
+  --orange: #e1714f;
+  --brown: #927373;
+  --black: #000000;
+}
+
+/* ::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--saffaron);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+} */
+
+.form-control:focus {
+  border-color: #dee2e6 !important;
+  box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%) !important;
+}
+.orange-txt {
+  color: var(--orange) !important;
+}
+.orange {
+  border-color: var(--orange) !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+.w-lg-80 {
+  width: 80% !important;
+}
+.w-md-85 {
+  width: 85% !important;
+}
+.feature-box,
+.tour-guide-card,
+.feature-title,
+.tour-guide-right,
+.tour-guide-left,
+.feature-top,
+.feature-bottom,
+.feature-top-last,
+.feature-bottom-last {
+  color: #000 !important;
+}
+
+body.dark .features-section {
+  color: #000 !important;
+}
+body.dark .features-section * {
+  color: #000 !important;
+}
