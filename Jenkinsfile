@@ -4,10 +4,16 @@ pipeline {
     tools {
         nodejs 'node25'
     }
-    
-environment {
-        CLIENT_URL = "http://localhost:5173"
-    }
+
+    environment {
+    DB_SERVER = "localhost"
+    DB_USER = "manasi"
+    DB_PASSWORD = "manasi"
+    DB_NAME = "NagpurMetro"
+    CLIENT_URL = "http://localhost:5173"
+}
+
+
     stages {
 
         stage('Install Backend') {
