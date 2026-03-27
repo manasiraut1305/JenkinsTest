@@ -163,7 +163,7 @@ const AdminImage = () => {
 
   return (
     <div className="p-3">
-      <h4>Image Gallery Management</h4>
+      <h4>Image Gallery</h4>
 
       <Form.Control
         placeholder="Search by title..."
