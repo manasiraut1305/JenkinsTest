@@ -4,7 +4,10 @@ pipeline {
     tools {
         nodejs 'node25'
     }
-
+    
+environment {
+        CLIENT_URL = "http://localhost:5173"
+    }
     stages {
 
         stage('Install Backend') {
